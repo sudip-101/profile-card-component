@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-family: "Kumbh Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: hsl(185, 75%, 39%);
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      display: grid;
+      /* font-size: 18px; */
+      place-content: center;
+      min-height: 100vh;
+      color: hsl(227, 10%, 46%);
+    }
+
+    .card-container {
+      height: max-content;
+      display: grid;
+      border-radius: 20px;
+      overflow: hidden;
+      grid-template-rows: 150px max-content;
+      background-color: white;
+      box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.479);
+    }
+
+    .card-top {
+      background-image: url(https://virtual-lee.github.io/Frontend-Mentor-Profile-Card/images/bg-pattern-card.svg);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .card-img img {
+      width: 100px;
+      height: 100px;
+      border: 5px solid white;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      margin-top: -55px;
+      display: inline-block;
+    }
+
+    .card-content {
+      text-align: center;
+      /* padding: 0 50px 36px; */
+    }
+
+    .card-content .card-title {
+      font-size: 0.825rem;
+      padding: 0 50px 36px;
+    }
+
+    .card-content h3, h1 {
+      margin-bottom: 8px;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .card-content .card-title p {
+      letter-spacing: 1px;
+      font-size: 1rem;
+      margin-top: 16px;
+    }
+
+    .card-content .card-title span {
+      font-size: 18px;
+      margin-right: 8px;
+      font-weight: 500;
+      color: hsl(227, 10%, 46%);
+    }
+
+    .card-stats {
+      /* margin-top: 48px; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 20px 50px 20px;
+      border-top: 1px solid grey;
+    }
+
+    .card-stats h3 {
+      font-size: 1.0575rem;
+      margin-bottom: 4px;
+    }
+    
+    .card-stats span {
+      letter-spacing: 1px;
+      font-size: 0.675rem;
+      color: hsl(227, 10%, 46%);
+    }
+
+    .attribution {
+      /* font-size: 18px; */
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+    }
+
+    .attribution a {
+      color: hsl(0, 0%, 87%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card-container">
+      
+      <div class="card-top">
+      </div>
+      <div class="card-content">
+        <div class="card-img">
+          <img src="./images/image-victor.jpg" alt="Victor">
+        </div>
+        <div class="card-title">
+          <h1>Victor Crest <span>26</span></h1>
+          <p>LONDON</p>
+        </div>
+        <div class="card-stats">
+          <div>
+            <h3>80K</h3>
+            <span>FOLLOWERS</span>
+          </div>
+          <div>
+            <h3>803K</h3>
+            <span>LIKES</span>
+          </div>
+          <div>
+            <h3>1.4K</h3>
+            <span>PHOTOS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sudip Maiti</a>.
+    </div>
+  </main>
+</body>
+
+</html>
